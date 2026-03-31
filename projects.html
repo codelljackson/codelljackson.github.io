@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects - Codell Jackson</title>
+  <title>Projects - Codell L. Jackson</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -18,28 +18,116 @@
     }
     h1 {
       font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #38bdf8;
+      margin-top: 40px;
     }
     a {
       color: #38bdf8;
       text-decoration: none;
+      margin-right: 15px;
+    }
+    .nav {
+      margin-bottom: 20px;
+    }
+    .project {
+      margin-top: 30px;
+      padding: 20px;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      background: #111827;
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #f8fafc;
+    }
+    .label {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
   <div class="container">
+
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+    </div>
+
     <h1>Projects</h1>
+    <p>
+      A sample of my Salesforce work focused on automation, reporting, user support, and continued development growth.
+    </p>
 
-    <p>Examples of Salesforce work and development experience.</p>
+    <div class="project">
+      <div class="label">Salesforce Flow / Automation</div>
+      <h3>Application Follow-Up Automation</h3>
+      <p>
+        Designed Flow-based automation to support follow-up communication and engagement tracking for application-related processes.
+      </p>
+      <ul>
+        <li>Designed automation that reduced manual follow-up effort and improved application engagement tracking.</li>
+        <li>Worked with record-triggered and scheduled Flows to support timely outreach and process consistency.</li>
+        <li>Focused on practical automation design that improved visibility without overcomplicating the user experience.</li>
+      </ul>
+    </div>
 
-    <ul>
-      <li>Designed and implemented record-triggered and scheduled Flows to automate application follow-ups</li>
-      <li>Built dashboards to track application pipeline and deposits by program</li>
-      <li>Supported Blackthorn Events implementation and user onboarding</li>
-      <li>Developing Apex classes and test methods as part of ongoing training</li>
-    </ul>
+    <div class="project">
+      <div class="label">Reporting / Dashboards</div>
+      <h3>Pipeline and Deposit Reporting</h3>
+      <p>
+        Built Salesforce reports and dashboards to help teams track pipeline activity and deposits more clearly.
+      </p>
+      <ul>
+        <li>Designed dashboards to track applications and deposits by program.</li>
+        <li>Improved reporting visibility so teams could monitor activity more efficiently.</li>
+        <li>Focused on making reports useful for day-to-day decision-making, not just data display.</li>
+      </ul>
+    </div>
 
-    <br>
-    <a href="index.html">← Back to Home</a>
+    <div class="project">
+      <div class="label">User Support / Adoption</div>
+      <h3>Event and User Process Support</h3>
+      <p>
+        Supported event-related processes and user adoption by improving guidance and reducing friction in Salesforce workflows.
+      </p>
+      <ul>
+        <li>Supported event process improvements and user onboarding efforts.</li>
+        <li>Improved system usability with in-app guidance and practical support documentation.</li>
+        <li>Helped users work more effectively by simplifying process steps and reducing confusion.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="label">Development Growth</div>
+      <h3>Apex and Technical Skill Building</h3>
+      <p>
+        Continuing to build development skills to support more advanced Salesforce solutions.
+      </p>
+      <ul>
+        <li>Developing Apex classes, SOQL skills, and test methods as part of ongoing training.</li>
+        <li>Using GitHub and VS Code to strengthen hands-on technical workflow experience.</li>
+        <li>Expanding from strong declarative solutions into more technical problem-solving.</li>
+      </ul>
+    </div>
+
+    <a class="back-link" href="index.html">← Back to Home</a>
+
   </div>
 </body>
 </html>

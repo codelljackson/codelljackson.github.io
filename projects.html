@@ -59,6 +59,38 @@
       display: inline-block;
       margin-top: 30px;
     }
+    .cert-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .cert-badge {
+      background: #1e293b;
+      border: 1px solid #38bdf8;
+      border-radius: 6px;
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      color: #38bdf8;
+    }
+    .cert-badge.in-progress {
+      border-color: #64748b;
+      color: #94a3b8;
+    }
+    .stat-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0 4px;
+    }
+    .stat {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
   </style>
 </head>
 <body>
@@ -71,77 +103,131 @@
 
     <h1>Projects</h1>
     <p>
-      A sample of my Salesforce work focused on automation, reporting, security, user support, and continued development growth.
+      A sample of my Salesforce work at Georgia Tech — automation, release management, security architecture, reporting, and ongoing development growth.
     </p>
+
+    <!-- Certifications -->
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <span class="cert-badge">Salesforce Administrator</span>
+      <span class="cert-badge">Platform App Builder</span>
+      <span class="cert-badge">Business Analyst</span>
+      <span class="cert-badge">AI Associate</span>
+      <span class="cert-badge">Education Cloud Consultant</span>
+      <span class="cert-badge">CompTIA A+</span>
+      <span class="cert-badge">CompTIA Network+</span>
+      <span class="cert-badge in-progress">Platform Developer I — In Progress</span>
+    </div>
 
     <!-- Automation Project -->
     <div class="project">
       <div class="label">Salesforce Flow / Automation</div>
       <h3>Application Follow-Up Automation</h3>
       <p>
-        Designed Flow-based automation to support follow-up communication and engagement tracking for application-related processes.
+        Architected Flow-based automation to eliminate manual outreach and improve application engagement tracking across five departments at Georgia Tech.
       </p>
+      <div class="stat-row">
+        <span class="stat">20+ Flows &amp; Sub-flows deployed</span>
+        <span class="stat">500+ monthly applications</span>
+        <span class="stat">5 departments</span>
+        <span class="stat">30+ users impacted</span>
+      </div>
       <ul>
-        <li>Designed automation that reduced manual follow-up effort and improved application engagement tracking across multiple programs.</li>
-        <li>Worked with record-triggered and scheduled Flows to support timely outreach and process consistency.</li>
-        <li>Focused on practical automation design that improved visibility without overcomplicating the user experience.</li>
+        <li>Deployed 20+ record-triggered and scheduled Flows and Sub-flows, automating follow-up across five departments processing 500+ monthly applications.</li>
+        <li>Eliminated manual outreach tasks for 30+ users by building reusable Sub-flow logic that enforced consistency without duplicating logic across flows.</li>
+        <li>Designed automation with maintainability in mind — modular, easy to extend, and built to handle edge cases without over-engineering the user experience.</li>
       </ul>
     </div>
 
-    <!-- Security Project (NEW) -->
+    <!-- Release Management / DevOps Project -->
+    <div class="project">
+      <div class="label">Release Management / DevOps</div>
+      <h3>Deployment Pipeline &amp; Release Management</h3>
+      <p>
+        Managed the end-to-end deployment lifecycle for Salesforce metadata and configurations using Copado and Azure DevOps — bridging declarative admin work with enterprise-grade DevOps practices.
+      </p>
+      <div class="stat-row">
+        <span class="stat">Copado</span>
+        <span class="stat">Azure DevOps</span>
+        <span class="stat">Sandbox → Production</span>
+      </div>
+      <ul>
+        <li>Used Copado to manage metadata migrations between sandbox and production environments, reducing deployment errors and ensuring environment alignment.</li>
+        <li>Integrated Azure DevOps into the release workflow to coordinate change tracking and support team-based delivery in an Agile/Scrum environment.</li>
+        <li>Applied DevOps best practices to declarative and configuration-based changes, building a more structured, repeatable release process.</li>
+      </ul>
+    </div>
+
+    <!-- Security Project -->
     <div class="project">
       <div class="label">Security / Access Management</div>
       <h3>Profile Reduction and Permission Set Optimization</h3>
       <p>
-        Improved Salesforce security and access management by reducing reliance on profiles and transitioning access to Permission Sets and Permission Set Groups.
+        Overhauled Salesforce security architecture by eliminating profile sprawl and rebuilding access control around Permission Sets and Permission Set Groups.
       </p>
+      <div class="stat-row">
+        <span class="stat">14 profiles → 4</span>
+        <span class="stat">30+ users</span>
+        <span class="stat">Org-wide scalability improvement</span>
+      </div>
       <ul>
-        <li>Reduced profile complexity by moving user access and permissions into Permission Sets.</li>
-        <li>Implemented Permission Set Groups to simplify access management and improve scalability.</li>
-        <li>Helped transition from a profile-heavy model to a more scalable Permission Set–driven approach.</li>
-        <li>Improved maintainability by separating user access from profile-based configurations.</li>
+        <li>Reduced org profiles from 14 down to 4 by migrating user access into granular, reusable Permission Sets — simplifying long-term security management.</li>
+        <li>Implemented Permission Set Groups to bundle related permissions, making access assignment faster and easier to audit.</li>
+        <li>Decoupled user access from profile-based configurations, giving the org a scalable model that can grow without creating new profiles every time a role changes.</li>
       </ul>
     </div>
 
     <!-- Reporting Project -->
     <div class="project">
       <div class="label">Reporting / Dashboards</div>
-      <h3>Pipeline and Deposit Reporting</h3>
+      <h3>Executive Pipeline and Deposit Reporting</h3>
       <p>
-        Built Salesforce reports and dashboards to help teams track pipeline activity and deposits more clearly.
+        Built a reporting layer across four teams at Georgia Tech to give leadership real-time visibility into application pipeline activity and deposit trends.
       </p>
+      <div class="stat-row">
+        <span class="stat">8 executive dashboards</span>
+        <span class="stat">24 custom reports</span>
+        <span class="stat">4 teams</span>
+        <span class="stat">Weekly delivery to leadership</span>
+      </div>
       <ul>
-        <li>Designed dashboards to track applications and deposits by program.</li>
-        <li>Improved reporting visibility so teams could monitor activity more efficiently.</li>
-        <li>Focused on making reports useful for day-to-day decision-making, not just data display.</li>
+        <li>Designed 8 executive dashboards and 24 custom reports tracking applications and deposits by program, surfacing data leadership needed to make weekly decisions.</li>
+        <li>Built reports to answer real business questions — not just display data — by working directly with stakeholders to understand what metrics actually drive decisions.</li>
+        <li>Improved cross-team reporting consistency so four departments could monitor pipeline activity from a shared source of truth.</li>
       </ul>
     </div>
 
-    <!-- User Support Project -->
+    <!-- Communication Modernization Project -->
     <div class="project">
-      <div class="label">User Support / Adoption</div>
-      <h3>Event and User Process Support</h3>
+      <div class="label">Platform Architecture</div>
+      <h3>Enterprise Communication Modernization</h3>
       <p>
-        Supported event-related processes and user adoption by improving guidance and reducing friction in Salesforce workflows.
+        Replaced legacy Salesforce email alerts with enterprise-grade Email Action solutions, improving system performance and giving the org a more flexible, maintainable communication layer.
       </p>
       <ul>
-        <li>Supported event process improvements and user onboarding efforts.</li>
-        <li>Improved system usability with in-app guidance and practical support documentation.</li>
-        <li>Helped users work more effectively by simplifying process steps and reducing confusion.</li>
+        <li>Evaluated existing alert-based communication workflows and identified where legacy design was limiting flexibility and performance.</li>
+        <li>Rebuilt outbound communication logic using Email Actions, providing greater control over delivery timing, template management, and cross-object triggering.</li>
+        <li>Improved long-term maintainability by moving away from tightly coupled alert configurations that were difficult to update without breaking existing processes.</li>
       </ul>
     </div>
 
     <!-- Development Growth -->
     <div class="project">
       <div class="label">Development Growth</div>
-      <h3>Apex and Technical Skill Building</h3>
+      <h3>Apex Development — Cloud Code Academy</h3>
       <p>
-        Continuing to build development skills to support more advanced Salesforce solutions.
+        Enrolled in a structured 16-week Apex developer training program at Cloud Code Academy to build hands-on technical skills and transition from declarative solutions into programmatic Salesforce development.
       </p>
+      <div class="stat-row">
+        <span class="stat">16-week structured program</span>
+        <span class="stat">VS Code + GitHub</span>
+        <span class="stat">Scratch Orgs</span>
+        <span class="stat">PDI in progress</span>
+      </div>
       <ul>
-        <li>Developing Apex classes, SOQL skills, and test methods as part of ongoing training.</li>
-        <li>Using GitHub and VS Code to strengthen hands-on technical workflow experience.</li>
-        <li>Expanding from strong declarative solutions into more technical problem-solving.</li>
+        <li>Building Apex classes, triggers, SOQL queries, and test methods through structured coursework and project-based assignments.</li>
+        <li>Using VS Code, GitHub, Scratch Orgs, and DLRS to develop a real developer workflow — not just classroom exercises.</li>
+        <li>Studying for the Salesforce Platform Developer I (PDI) certification to formalize the technical foundation being built through hands-on work.</li>
       </ul>
     </div>
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,6 +65,30 @@
       border-color: #64748b;
       color: #94a3b8;
     }
+
+    /* Hero layout */
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .hero-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 3px solid #38bdf8;
+      flex-shrink: 0;
+    }
+    .hero-text {
+      flex: 1;
+      min-width: 200px;
+    }
+    .hero-text h1 {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -73,23 +98,35 @@
       <a href="projects.html">Projects</a>
     </div>
 
-    <h1>Codell L. Jackson</h1>
-    <p>Salesforce Administrator | Flow & Automation Specialist | 5 Active Certifications</p>
-    <p>
-      I build scalable Salesforce solutions — automation, release management, security architecture, and reporting — that give teams real operational leverage.
-    </p>
-    <p class="button-links">
-      <a href="Codell_Jackson_Resume.pdf" target="_blank">Download Resume</a>
-      <a href="https://www.linkedin.com/in/salesforce-codelljackson/" target="_blank">LinkedIn</a>
-      <a href="projects.html">View Projects</a>
-    </p>
+    <!-- Hero -->
+    <div class="hero">
+      <img
+        src="headshot.jpg"
+        alt="Codell L. Jackson"
+        class="hero-photo"
+      />
+      <div class="hero-text">
+        <h1>Codell L. Jackson</h1>
+        <p>Salesforce Administrator | Flow, DevOps & Security | 5x Certified</p>
+        <p>
+          I build scalable Salesforce solutions — automation, release management, security architecture, and reporting — that give teams real operational leverage.
+        </p>
+        <p class="button-links">
+          <a href="Codell_Jackson_Resume.pdf" target="_blank">Download Resume</a>
+          <a href="https://www.linkedin.com/in/salesforce-codelljackson/" target="_blank">LinkedIn</a>
+          <a href="projects.html">View Projects</a>
+        </p>
+      </div>
+    </div>
 
     <div class="section">
       <h2>About</h2>
       <p>
-        Salesforce Administrator at Georgia Tech with 4+ years of hands-on platform experience and 5 active certifications. I specialize in Flow-based automation, release management, and scalable security architecture — and I work directly with stakeholders to turn complex business requirements into platform solutions that actually get used.
+        Salesforce Administrator at Georgia Tech with 4+ years of hands-on platform experience and 5 active certifications. I specialize in Flow-based automation, release management with Copado and Azure DevOps, and scalable security architecture using Permission Sets and Permission Set Groups.
       </p>
-     
+      <p>
+        Completed a 16-week Apex developer program at Cloud Code Academy — building Apex classes, triggers, SOQL, and test methods using VS Code, GitHub, and Scratch Orgs. Currently pursuing the Platform Developer I certification.
+      </p>
     </div>
 
     <div class="section">
@@ -99,7 +136,7 @@
         <li>Release Management — Copado, Azure DevOps, sandbox-to-production deployments</li>
         <li>Security Architecture — Permission Sets, Permission Set Groups, profile reduction</li>
         <li>Reporting & Dashboards — executive dashboards, custom reports, cross-team visibility</li>
-        <li>Apex, SOQL, Triggers, and Test Methods</li>
+        <li>Apex, SOQL, Triggers, and Test Methods (in progress)</li>
         <li>VS Code, GitHub, Scratch Orgs, Change Sets, DLRS</li>
         <li>EDA — Affiliation Management, Program Enrollments, Campaign Members</li>
       </ul>
@@ -108,7 +145,7 @@
     <div class="section">
       <h2>Recent Work</h2>
       <ul>
-        <li>Deployed 20+ Flows and Sub-flows automating application follow-up across 5 departments, handling 500+ monthly applications.</li>
+        <li>Deployed 20+ Flows and Sub-flows automating application follow-up across 5 departments handling 500+ monthly applications.</li>
         <li>Managed end-to-end deployment pipeline using Copado and Azure DevOps — sandbox to production with full metadata control.</li>
         <li>Cut org profiles from 14 down to 4 by migrating 30+ users to Permission Sets and Permission Set Groups.</li>
         <li>Built 8 executive dashboards and 24 custom reports delivering weekly pipeline visibility to leadership across 4 teams.</li>
@@ -119,14 +156,14 @@
     <div class="section">
       <h2>Certifications</h2>
       <div class="cert-grid">
-        <span class="cert-badge">Platform Administrator</span>
+        <span class="cert-badge">Salesforce Administrator</span>
         <span class="cert-badge">Platform App Builder</span>
         <span class="cert-badge">Business Analyst</span>
         <span class="cert-badge">AI Associate</span>
         <span class="cert-badge">Education Cloud Consultant</span>
-        <span class="cert-badge in-progress">Platform Administrator II — In Progress</span>
         <span class="cert-badge">CompTIA A+</span>
         <span class="cert-badge">CompTIA Network+</span>
+        <span class="cert-badge in-progress">Platform Developer I — In Progress</span>
       </div>
     </div>
 
